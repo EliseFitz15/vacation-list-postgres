@@ -1,9 +1,9 @@
 <h1>Vacation Destination List</h1>
 
 <ul id="vacation-list">
-  <% @vacations.each do |destination| %>
+  <% @vacations.each do |vacation| %>
     <li class="destination">
-      <%= destination %>
+      <a href="/vacations/<%= vacation["id"] %>"><%= vacation["destination"] %></a>
     </li>
   <% end %>
 </ul>
